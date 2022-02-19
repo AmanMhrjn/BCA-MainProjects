@@ -1,0 +1,377 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background: #000000;
+	color: #ffffff;
+	width: 100%;
+    height: 100%;
+	border-bottom: red 3px solid;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin-left: 40px;
+	font-size: 45px;
+}
+
+header .highlight, header .current a {
+	color: #FF000C;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #1800FF;
+	font-weight: bold;
+}
+
+/*Showcase*/
+
+
+/*Home page*/
+#booking {
+	display: flex;
+	color: white;
+	background: black;
+	border-top: red 3px solid;
+	border-bottom: red 3px solid;
+	height: 150px;	
+}
+
+.bookingText{
+	font-size: 30px;
+	width: 500px;
+	padding: 50px ;
+	text-align: center;
+}
+
+.check{
+
+	margin-left: 7%;
+	width: 180px;
+	padding: 8px;
+	text-align: center;
+	font-size: 18px;
+}
+
+input[type=date]{
+	padding: 10px 15px;
+	font-size: 15px;
+}
+.activity{
+	margin-top: 40px;
+}
+
+.booking-button{
+	background-color: #F30000;
+	text-decoration: none;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 40px;
+	margin-left: 50px;
+}
+
+.booking-button:hover{
+	background-color: #960606;
+}
+
+#boxes {
+	margin-top: 20px;
+	height: 250px;
+}
+
+#boxes .box {
+	float: right;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+	margin: 10px;
+}
+
+#boxes .box img {
+	width: 80px;
+}
+
+/*Footer*/
+footer {
+	padding-top: 10px;
+	background-color: red;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	height: 70px;
+}
+
+/*Rooms page*/
+.room-page{
+
+	height: 470px;
+	display: flex;
+}
+.cate-box1{
+	border: 2px solid black;
+	height: 250px;
+	width: 300px;
+	margin: 15px;
+	margin-left: 90px;
+	cursor: pointer;
+	padding: 10px;
+}
+.cate-box{
+	border: 2px solid black;
+	height: 250px;
+	width: 300px;
+	margin: 15px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.room-text{
+	text-align: center;
+	
+}
+
+.rooms{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+/*Contact us*/
+/* Style inputs */
+input[type=text]{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	}
+
+input[type=password], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #FD4545;
+	color: white;
+	padding: 15px 20px;
+	border: 1.5px solid #F9F1F1;
+	cursor: pointer;
+	float: right;
+	width: 150px;
+}
+
+input[type=submit]:hover {
+	background-color: #F30000;
+
+}
+
+input[type=button] {
+	background-color: #FD4545;
+	color: white;
+	padding: 12px 20px;
+	top: 5px;
+	border: 1.5px solid #F9F1F1;
+	cursor: pointer;
+}
+
+input[type=button]:hover {
+	background-color: #F30000;
+
+}
+
+/*About us*/
+#main{
+	height: 500px;
+	padding: 18px;
+}
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+	margin-right: 90px;
+}
+
+article#main-col {
+	float: left;
+	width: 50%;
+	margin-top: 10px;	
+	margin-left: 90px;
+}
+
+.dark{
+	background-color: #36306d;
+	padding: 15px;
+	color: white;
+	font-size: 16px;
+}
+
+.page-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*SignIn*/
+#signin{
+	width: 98%;
+	background-color: #103147;
+	height: 50vh;
+	margin: 5px;
+}
+
+#signup{
+	width: 98%;
+	background-color: #103147;
+	height: 50vh;
+	margin: 5px;
+	display: none;
+}
+#signinstyle{
+	color: white;
+}
+#signin{
+	width: 98%;
+	background-color: #103147;
+	height: 50vh;
+	margin: 5px;
+}
+
+#signup{
+	width: 98%;
+	background-color: #103147;
+	height: 50vh;
+	margin: 5px;
+	display: none;
+}
+#signinstyle{
+	color: white;
+}
+.modal{
+	width:100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.signup-page{
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 80px;
+	background: rgba(255, 255, 255, 0.23);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.4px);
+	border: 1px solid rgba(255, 255, 255, 1);
+}
+.closesign{
+	position: absolute;
+	font-size: 40px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.button_sign{
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.frontfaceimg{
+	width: 100%;
+}
+.modal{
+	width:100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.closesign{
+	position: absolute;
+	font-size: 40px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.button_sign{
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.frontfaceimg{
+	width: 100%;
+}
+
+/*Hotel page*/
+.hotel-page{
+	border: 3px solid black;
+	height: auto;
+	padding: 20px;
+}
+
+/*Duelex room*/
+.img-box{
+	display: flex;
+}
+
+h2{
+	padding: 15px;
+}
+
+input[type=number]{
+	width: 90%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
