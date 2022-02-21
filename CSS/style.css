@@ -57,9 +57,6 @@ header a:hover {
 	font-weight: bold;
 }
 
-/*Showcase*/
-
-
 /*Home page*/
 #booking {
 	display: flex;
@@ -70,17 +67,20 @@ header a:hover {
 	height: 150px;	
 }
 
+h4{
+	font-size: 20px;
+}
+
 .bookingText{
 	font-size: 30px;
-	width: 500px;
+	width: 100%;
 	padding: 50px ;
 	text-align: center;
 }
 
 .check{
-
-	margin-left: 7%;
-	width: 180px;
+	margin-left: 20px;
+	width: 200px;
 	padding: 8px;
 	text-align: center;
 	font-size: 18px;
@@ -88,19 +88,24 @@ header a:hover {
 
 input[type=date]{
 	padding: 10px 15px;
-	font-size: 15px;
+	font-size: 16px;
 }
 .activity{
 	margin-top: 40px;
+	padding: 15px 20px;
+	width: 10%;
 }
 
 .booking-button{
 	background-color: #F30000;
 	text-decoration: none;
 	color: white;
-	padding: 15px 20px;
+	padding: 12px 14px;
 	border-radius: 40px;
-	margin-left: 50px;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 100%;
+	font-size: 18px;
 }
 
 .booking-button:hover{
@@ -170,41 +175,76 @@ footer {
 }
 /*Contact us*/
 /* Style inputs */
-input[type=text]{
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+.column1{
+	font-size: 20px;
 }
 
-input[type=email], select, textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	}
-
-input[type=password], select, textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+.cont-header{
+	font-size: 30px;
 }
 
-input[type=submit] {
+.cont-text{
+	font-size: 20px;
+}
+
+.cont-fname{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 18px;
+}
+
+.cont-lname{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 18px;
+
+}
+
+.cont-email{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 18px;
+
+}
+
+.cont-contacting{
+	width: 99%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 18px;
+}
+
+.cont-subject{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 18px;
+
+}
+
+.cont-submit {
 	background-color: #FD4545;
 	color: white;
 	padding: 15px 20px;
 	border: 1.5px solid #F9F1F1;
 	cursor: pointer;
 	float: right;
-	width: 150px;
+	width: 20%;
+	font-size: 18px;
+	margin-bottom: 15px;
 }
 
 input[type=submit]:hover {
@@ -212,19 +252,6 @@ input[type=submit]:hover {
 
 }
 
-input[type=button] {
-	background-color: #FD4545;
-	color: white;
-	padding: 12px 20px;
-	top: 5px;
-	border: 1.5px solid #F9F1F1;
-	cursor: pointer;
-}
-
-input[type=button]:hover {
-	background-color: #F30000;
-
-}
 
 /*About us*/
 #main{
@@ -366,12 +393,59 @@ h2{
 	padding: 15px;
 }
 
-input[type=number]{
-	width: 90%;
+.PD-name{
+	width: 98%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	margin-top: 6px;
 	margin-bottom: 16px;
-	resize: vertical;
+	font-size: 16px;
 }
 
+.PD-email{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.PD-phone{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.BD-numberOfguest{
+	width: 98%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.BD-submit{
+	background-color: #FD4545;
+	color: white;
+	padding: 15px 20px;
+	border: 1.5px solid #F9F1F1;
+	cursor: pointer;
+	float: right;
+	width: 20%;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/*Error*/
+.error{
+	display: none;
+    color: red;
+    padding-left: 9px;
+    padding-bottom: 11px;
+	font-size: 20px;
+}

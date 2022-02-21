@@ -6,6 +6,7 @@
 	<title>Friends Hotel | Rooms</title>
 	<link rel="shortcut icon" type="image/png" href="img/hotel.png">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./Javascript/main.js"></script>
 </head>
 <body>
 	<header>
@@ -29,36 +30,39 @@
             <img src="./Images/duelex2.jpg" width="800px" height="500px">
         </div>
         <div>
-            <h2><form action="" method="GET">
+            <h2><form action="" method="GET" onsubmit="event.preventDefault(); validateDetails()">
                 <fieldset>
                     <legend>Person Details</legend>
-                    <label for="name">Username:</label>   <br />
-                        <input type="text" class="PD-name" name="username" id="name" required autofocus placeholder="Your username"pattern="[a-zA-Z]{3,}" 
+                    <label for="username">Username:</label>   <br />
+                        <input type="text" class="PD-name" name="username" id="username" placeholder="Your username"pattern="[a-zA-Z]{3,}" 
                         title="please enter in more than three letters"> <br />
+                        <div id="username-error" class="error"></div>
 
                     <label for="email">Email:</label> <br />
-                        <input type="text" name="email" id="email" required placeholder="Your email" pattern="[a-zA-Z]{3,}@[a-zA-A]{3.}[.]{1}[a-zA-Z]{2,}" 
+                        <input type="text"  class="PD-email" name="email" id="email"  placeholder="Your email" pattern="[a-zA-Z]{3,}@[a-zA-A]{3.}[.]{1}[a-zA-Z]{2,}" 
                         title="please enter in a valid email adress"> <br />
+                        <div id="email-error" class="error"></div>
 
                     <label for="phone">Phone:</label> <br />
-                        <input type="number" name="phone" id="phone" required 
-                        placeholder="Your phone number" pattern="[0-9]{4}" title="please enter in a phone 
-                        number in this format:#### ## ## ##"> <br />
-                    
+                        <input type="number" name="phone" id="phone" class="PD-phone"
+                        placeholder="Your phone number" pattern="[0-9]{4}"> <br />
+                        <div id="phone-error" class="error"></div>
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend>Booking Details: </legend>
                         <label for="date">Booking date:</label>
-                            <input id="date" type="date" name="date" min="2018-04-02" max="2020-12-30"> <br />
+                            <input id="date" class="BD-date" type="date" name="date" min="2018-04-02" max="2020-12-30">
+                            <div id="date-error" class="error"></div> <br />
                     <br>
                         <label for="numberofGuests"> Number Of Guests:</label>
-                            <input id="numberofGuests" type="number" name="number of guests" min="1" max="5"> <br />
-                    
+                            <input id="numberOfGuests" class="BD-numberOfguest" type="number" name="number of guests" placeholder="Enter number of guests" min="1" max="5"> <br />
+                            <div id="numberofguest-error" class="error"></div>
+
                     <label for="balcony">Do you require Balcony?</label>
                         <input id="balcony" type="checkbox" name="balcony" value="yes" checked>
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" class="BD-submit" value="Submit">
 
                 </fieldset>
         </form></h2>

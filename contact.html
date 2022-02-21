@@ -5,6 +5,7 @@
             Friends Hotel | Contact Us
         </title>
         <link rel="stylesheet" href="./CSS/style.css">
+        <script src="./Javascript/main.js"></script>
     </head>
     <body>
         <header>
@@ -23,23 +24,26 @@
         </header>
         <div class="container">
             <div style="text-align:center">
-                <h2>Contact Us</h2>
-                <p>Swing by for a cup of coffee, or leave us a message:</p>
+                <h2 class="cont-header">Contact Us</h2>
+                <p class="cont-text">Swing by for a cup of coffee, or leave us a message:</p>
             </div>
             <aside id="sidebar1">
                 <div class="column1">
-                    <form action="/action_page.php">
+                    <form action="" onsubmit="event.preventDefault(); validateContact()">
                         <label for="fname">First name:</label>  
-                            <input type="text" name="username" id="name" required placeholder="Enter your first name" > <br>
-                  
+                            <input type="text" name="username" class="cont-fname" id="fname" placeholder="Enter your first name" > <br>
+                            <div class="error" id="fname-error"></div>
+
                         <label for="lname">Last name:</label>  
-                            <input type="text" name="username" id="name" required placeholder="Enter your last name" > <br>
-                  
+                            <input type="text" name="username" class="cont-lname" id="lname" placeholder="Enter your last name" > <br>
+                            <div class="error" id="lname-error"></div>
+
                         <label for="email">Email:</label>
-                           <input type="email" name="email" id="email" required placeholder="Your email" > <br>
-                  
-                        <label for="country">Intention of contacting</label>
-                           <select id="country" name="Place">
+                           <input type="email" name="email" id="email" class="cont-email" placeholder="Enter your email" > <br>
+                           <div class="error" id="email-error"></div>
+                           
+                        <label for="contact">Intention of contacting</label>
+                           <select id="contact" name="Place" class="cont-contacting">
                                 <option value="General inquiry">General inquiry</option>
                                 <option value="Report issue">Report issue</option>
                                 <option value="Support Friends Hotel">Support Friends Hotel</option>
@@ -47,8 +51,8 @@
                             </select> <br>
                     
                         <label for="subject">Subject:</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                        <input type="submit" value="Submit"> <br>
+                            <textarea id="subject" class="cont-subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" class="cont-submit" value="Submit"> <br>
                     </form>
                 </div>
             </aside>
