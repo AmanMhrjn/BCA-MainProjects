@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Friends' hotel</title>
+        <link rel="stylesheet" href="homeStyle.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <div class="head" > 
+            <span style="color: red;">FRIENDS'</span>&nbsp;Hotel
+        </div>
+        
+            <nav>
+                <ul>
+                    <li> <a href="#" ><button class="active" style="color: red;">Home</button></a></li>      
+                    <li> <a href="Room.html"><button>Rooms</button></a></li>
+                    <li> <a href="Aboutus.html"><button>About us</button></a></li>
+                    <li> <a href="Contactus.html"><button>Contact us</button></a></li>
+                    <li> <a><button onclick="document.getElementById('signdiv').style.display='block'">Sign in</button></a></li>
+                </ul>
+            </nav>
+        
+        <div class="section">
+            <div class="sectiontxt">Check Room Availability</div>
+            <div class="subsectiontxt" >
+                <form>
+                    <div>
+                        CheckIn Date
+                        <input style="font-size: 24px;" type="date" /> &nbsp;
+                    
+                        CheckOut Date
+                        <input style="font-size: 24px;" type="date" />
+                    </div>
+                    <div>
+                        <input class="checkbutton"  type="button" value="Check Availability" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 5% 90% 5%;  align-items: center; background-color: black; margin-bottom: 5px; ">
+            <div><button style=" margin-left: 20px; border: none; font-size: xx-large; background-color: black; color: white;" onclick="plusDivs(-1)">&#10094;</button></div>
+            
+                <div style="width: 100%; ">
+                    <img class="mySlides" src="images/rrecp.jpg" style="width:100%; height:60vh">
+                    <img class="mySlides" src="images/hotel luna.jpg" style="width:100%; height:60vh">
+                    <img class="mySlides" src="images/out.jpg" style="width:100%; height:60vh">
+                    <img class="mySlides" src="images/hotel.jpg" style="width:100% ; height:60vh">
+                </div>
+            
+            <div><button  style=" margin-left: 20px; border: none; font-size: xx-large; background-color: black; color: white;" onclick="plusDivs(1)">&#10095;</button></div>
+        </div> 
+        <div id="signdiv" class="modal">
+            <div class="container">
+                <div style="display: flex; justify-content: right; height: 5vh; padding-right: 5px;">
+                    <span onclick="document.getElementById('signdiv').style.display='none'"; class="closesign">+</span>
+                </div>    
+                    <div class="button_sign">
+                    <span id="signinstyle" onclick="document.getElementById('signin').style.display='block';document.getElementById('signup').style.display='none'; document.getElementById('signinstyle').style.color='#404040'; document.getElementById('signupstyle').style.color='black'">Sign-in</span>
+                    <span style=" font-size:xx-large"> &nbsp; | &nbsp;</span>
+                    <span id="signupstyle" onclick="document.getElementById('signup').style.display='block'; document.getElementById('signin').style.display='none'; document.getElementById('signupstyle').style.color='#404040'; document.getElementById('signinstyle').style.color='black'">Sign-up</span>
+                    </div>
+                    <hr>
+                    <div id="signup">
+                        <form id="signupform" action="test_signup.php" method="POST" onsubmit="event.preventDefault(); signupvalidate()" >
+                            <label for="name"><b>Full Name</b></label> <br/>
+                            <input class="inputstyle" type="text" placeholder="Enter your name" name="name" id="name" > <br>
+                            <span style="color: red; display: none; font-size: small; margin-left: 5px ;" id="for_name" >User name cannot be empty <br/></span> 
+                            <label for="email"><b>Email</b></label> <br/>
+                            <input  class="inputstyle" type="text" placeholder="Enter email" name="email" id="email" > <br>
+                            <span style="color: red; display: none; font-size: small; margin-left: 5px ;" class="valid" id="for_email" >Email cannot be empty <br/></span> 
+                            <label for="psw"><b>Password</b></label> <br/>
+                            <input class="inputstyle" type="password" placeholder="Enter password" name="psw" id="psw"  > <br>
+                            <span style="color: red; display: none; font-size: small; margin-left: 5px ;" class="valid" id="for_password">Password cannot be empty <br/></span> 
+                            <span style="color: red; display: none; font-size: small; margin-left: 5px ;"  class="valid" id="password_length">Password must be of atleast 8 characters <br/></span> 
+                            <label for="pswconfirm"><b>Confirm Password</b></label> <br/>
+                            <input class="inputstyle" type="password" placeholder="Confirm password" name="pswcon" id="pswcon"  > <br> 
+                            <span style="color: red; display: none; font-size: small; margin-left: 5px ;" class="valid" id="for_password">Password cannot be empty <br/></span>
+                            <button type="submit" name="submit" class="signbtn" >Sign Up</button>
+                        </form>
+                    </div>
+                    <div id="signin">
+                        <label for="email"><b>Email</b></label> <br/>
+                        <input class="inputstyle" type="text" placeholder="Enter email" name="email" > <br>
+                        <label for="psw"><b>Password</b></label> <br/>
+                        <input class="inputstyle" type="password" placeholder="Enter password" name="psw"  > <br> 
+                        <button type="submit" class="signbtn">Sign In</button>
+                    </div> 
+                </div> 
+            </div>
+            <div class="Introduction">
+                <div class="title">
+                    Welcome to Friend's Hotel
+                </div>
+                <div class="description">
+                    Friends' hotel is located in the immaculate area of Thamel, Kathmandu is a hotel established in 2000. 
+                    Friends' Hotel is one the most reputed hotels in Kathmandu and has proudly built its reputation in hospitality and 
+                    service throughout its 22 years of operation. 
+                    <br/>
+                    The hotel is close to the cities famous historical attractions. Friend's Hotel provides very reasonable rate compared
+                    to the hospitality service it provides. Friend's Hotel is re-knowed to be popular with friends night outs and hangout.
+                    Hotel is located in the tourist spot which provides all the facilities required by the tourist. 
+                </div>
+                <div class="facilities">
+                    Facilities provided by our Hotel
+                </div>
+                <div class="facilitiespoint">
+                    <ul>
+                        <li>
+                            Comfortable suite, single, double and triple rooms
+                        </li>
+                        <li>
+                            Located in a serene and peaceful environment in the heart of the busy hub of kathmandu
+                        </li>
+                        <li>
+                            Quick check in service
+                        </li>
+                        <li>
+                            Daily housekeeping, laundry and cleaning services 
+                        </li>
+                        <li>
+                            Designated Smoking and Non smoking area 
+                        </li>
+                        <li>
+                            Bar with unlimited choice of International and Nepali Drinks
+                        </li>
+                        <li>
+                            Free WIFI
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    Honoured member of
+                </div>
+                <div>
+                    <img src="images/Han.jpg" style="width: 20%;" /> &nbsp;
+                    <img src="images/NTB.jpg" style="width: 20%;" />
+                </div>
+            </div>
+            
+            <footer>
+                <p>Friends' Hotel, Copyright &copy; 2022</p>
+            </footer>
+        <script>
+             function signupvalidate(){
+                signform = document.getElementById('signupform'); 
+                name = document.getElementById('name').value;
+                email= document.getElementById('email').value;
+                password= document.getElementById('psw').value;
+                conpassword= document.getElementById('pswcon').value;
+                namerror= document.getElementById('for_name');
+                emailerror= document.getElementById('for_email');
+                isValidate = true;
+            
+                if(name == ''){
+                    namerror.style.display = "block";
+                    isValidate = false;
+                }
+                console.log("hello");
+                
+                if(isValidate){
+                    signform.submit();
+                }
+
+            }
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
+        </script>
+    </body>
+</html>
