@@ -173,10 +173,10 @@
                         <span onclick="document.getElementById('Suite').style.display='none'"; class="closesign">+</span>
                     </div>   
                     <h1 style="padding-left: 10px; text-decoration: underline; text-align: center;">Exclusive Suite</h1>
-                    <div style=" margin: 10px; height: 62vh; background-color: rgba(255, 255, 255, 0.4);">
-                        <form id="SuiteRoom" action="" method="POST">
+                    <div style=" margin: 10px; height: 80vh; background-color: rgba(255, 255, 255, 0.4);">
+                        <form id="SuiteRoom" action="" method="POST" onsubmit="event.preventDefault(); validateDetails()">
                             <fieldset class="room-fieldset">
-                                <legend>Person Details</legend>
+                            <legend>Person Details</legend>
                                 <label for="username">Username:</label>   <br />
                                     <input type="text" class="PD-name" name="username" id="username" placeholder="Your username"pattern="[a-zA-Z]{3,}" 
                                     title="please enter in more than three letters"> <br />
@@ -195,21 +195,23 @@
                             <br>
                             <fieldset class="room-fieldset">
                                 <legend>Booking Details: </legend>
-                                    <label for="date">Checkin date:</label>
-                                        <input id="date" class="BD-date" type="date" name="date" min="2018-04-02" max="2020-12-30">
-                                        <div id="date-error" class="error"></div> <br />
-                                        
-                                        <label for="date">Checkout date:</label>
-                                        <input id="date" class="BD-date" type="date" name="date" min="2018-04-02" max="2020-12-30">
-                                        <div id="date-error" class="error"></div> <br />
-
-                                        <label for="pickup">Airport pickup:</label>
-                                        <input type="radio" name="pickup" value="yes">Yes
-                                        <input type="radio" name="pickup" value="no">No
+                                    <div class="BD-chck">    
+                                        <div class="BD-chck1">
+                                            <label for="date">Checkin date:</label>
+                                            <input id="date" class="BD-date" type="date" name="date" min="2018-04-02">
+                                            <div id="date-error" class="error"></div> 
+                                        </div>    
+                                        <div class="BD-chck2">
+                                            <label for="date">Checkout date:</label>
+                                            <input id="date" class="BD-date" type="date" name="date" min="2018-04-02">
+                                            <div id="date-error" class="error"></div> <br />
+                                        </div>
+                                    </div>
+                                            <label for="pickup">Airport pickup:</label>
+                                            <input type="radio" name="pickup" value="yes">Yes
+                                            <input type="radio" name="pickup" value="no">No
                                        
-                                <br>
                                 <input type="submit" class="BD-submit" value="Submit">
-            
                             </fieldset>
                         </form>
                     </div>

@@ -2,13 +2,13 @@ function validateDetails(){
     userName = document.getElementById('username').value;
     email = document.getElementById('email').value;
     phone = document.getElementById('phone').value;
-    numberOfGuests = document.getElementById('numberOfGuests').value;
+
 
 
     userNameError = document.getElementById('username-error');
     emailError = document.getElementById('email-error');
     phoneError = document.getElementById('phone-error');
-    numberOfGuestError = document.getElementById('numberofguest-error');
+
 
     if(userName == ""){
         userNameError.innerHTML="Username cannot be EMPTY";
@@ -38,11 +38,6 @@ function validateDetails(){
                 phoneError.style.display="block";
             }
         }
-    }
-
-    if(numberOfGuests == ""){
-        numberOfGuestError.innerHTML="Number of guest is EMPTY";
-        numberOfGuestError.style.display="block";
     }
 
 }
