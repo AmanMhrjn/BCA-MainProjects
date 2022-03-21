@@ -174,18 +174,13 @@
                     </div>   
                     <h1 style="padding-left: 10px; text-decoration: underline; text-align: center;">Exclusive Suite</h1>
                     <div style=" margin: 10px; height: 80vh; background-color: rgba(255, 255, 255, 0.4);">
-                        <form id="SuiteRoom" action="" method="POST" onsubmit="event.preventDefault(); validateDetails()">
+                        <form id="SuiteRoom" action="" method="POST" onsubmit="event.preventDefault(); validateRoomDetails()">
                             <fieldset class="room-fieldset">
                             <legend>Person Details</legend>
                                 <label for="username">Username:</label>   <br />
                                     <input type="text" class="PD-name" name="username" id="username" placeholder="Your username"pattern="[a-zA-Z]{3,}" 
                                     title="please enter in more than three letters"> <br />
                                     <div id="username-error" class="error"></div>
-            
-                                <label for="email">Email:</label> <br />
-                                    <input type="text"  class="PD-email" name="email" id="email"  placeholder="Your email" pattern="[a-zA-Z]{3,}@[a-zA-A]{3.}[.]{1}[a-zA-Z]{2,}" 
-                                    title="please enter in a valid email adress"> <br />
-                                    <div id="email-error" class="error"></div>
             
                                 <label for="phone">Phone:</label> <br />
                                     <input type="number" name="phone" id="phone" class="PD-phone"

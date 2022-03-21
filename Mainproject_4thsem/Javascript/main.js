@@ -1,12 +1,10 @@
-function validateDetails(){
+function validateRoomDetails(){
     userName = document.getElementById('username').value;
-    email = document.getElementById('email').value;
     phone = document.getElementById('phone').value;
 
 
 
     userNameError = document.getElementById('username-error');
-    emailError = document.getElementById('email-error');
     phoneError = document.getElementById('phone-error');
 
 
@@ -19,11 +17,6 @@ function validateDetails(){
             userNameError.style.display="block";
         }
     }
-
-    if(email == ""){
-        emailError.innerHTML="Email cannot be EMPTY";
-        emailError.style.display="block";
-    } 
 
     if(phone == ""){
         phoneError.innerHTML="Phone number cannot be EMPTY";
